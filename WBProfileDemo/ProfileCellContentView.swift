@@ -35,7 +35,7 @@ class ProfileCellContentView: UIView {
             let profileSubViewController = ProfileSubTableViewController()
             superViewController.addChildViewController(profileSubViewController)
             
-            profileSubViewController.view.frame = CGRect(x: kScreeenWidth * CGFloat(i), y: 0, width: kScreeenWidth, height: kScreenHeight)
+            profileSubViewController.view.frame = CGRect(x: kScreeenWidth * CGFloat(i), y: 0, width: kScreeenWidth, height: self.bounds.size.height)
             profileSubViewController.view.backgroundColor = colorArr[i]
             scrollView.addSubview(profileSubViewController.view)
             profileSubViewController.didMove(toParentViewController: superViewController)

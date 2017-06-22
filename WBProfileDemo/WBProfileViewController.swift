@@ -16,19 +16,24 @@ let kWBProfileViewControllerTableViewDidScrollNotification = "kWBProfileViewCont
 
 //MARK: -- 自定义一个可以接收上层tableView手势的tableView
 class TBCustomGestureTableView: UITableView, UIGestureRecognizerDelegate {
+    //底层tableView实现这个UIGestureRecognizerDelegate的方法，从而可以接收并响应上层tabelView的滑动手势，otherGestureRecognizer就是它上层View也持有的Gesture，这里在它上层的有scrollView和顶层tableView
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         
-        let isShouldView: Bool? = otherGestureRecognizer.view?.isMember(of: UIScrollView.self)
-        //如果是scrollView的手势，肯定是不能同时响应的
-        if let isShouldView = isShouldView, isShouldView == true{
+//        保证其它手势的View存在
+        guard let otherView = otherGestureRecognizer.view else {
+            return false
+        }
+        //如果其它手势的View是scrollView的手势，肯定是不能同时响应的
+        if otherView.isMember(of: UIScrollView.self) {
             return false
         }
         //    其它手势是collectionView 或者tableView的pan手势 ，那么就让它们同时响应
-        let isPan = gestureRecognizer.isKind(of: UIPanGestureRecognizer.self) && gestureRecognizer.isKind(of: UIPanGestureRecognizer.self)
-        let isKindScrollView = otherGestureRecognizer.view?.isKind(of: UIScrollView.self)
-        if let isKindScrollView = isKindScrollView, isKindScrollView && isPan {
+        let isPan = gestureRecognizer.isKind(of: UIPanGestureRecognizer.self)
+        
+        if isPan && otherView.isKind(of: UIScrollView.self) {
             return true
         }
+        
         return false
     }
 }
@@ -126,6 +131,7 @@ extension WBProfileViewController {
         tableView.rowHeight = kScreenHeight - sectionHeight - navigationHeight
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = .none
+        tableView.tableFooterView = UIView()
         tableView.scrollsToTop = false
         tableView.sectionHeaderHeight = sectionHeight
         setUpTableViewHeaderView()

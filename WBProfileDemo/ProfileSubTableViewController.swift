@@ -15,7 +15,6 @@ class ProfileSubTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -59,7 +58,6 @@ extension ProfileSubTableViewController {
             return cell
         }
         cell = UITableViewCell(style: .default, reuseIdentifier: "reuseIdentifier")
-        
         cell?.backgroundColor = view.backgroundColor
         return cell!
     }
