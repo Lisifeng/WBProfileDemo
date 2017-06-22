@@ -17,6 +17,15 @@
 		5467E0181EF1118400027386 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5467E0171EF1118400027386 /* HMSegmentedControl.m */; };
 		5467E01A1EF114DA00027386 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467E0191EF114DA00027386 /* SegmentView.swift */; };
 		5467E01C1EF1152000027386 /* ProfileCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467E01B1EF1152000027386 /* ProfileCellContentView.swift */; };
+		54EEAE261EFBB55100C0849E /* SubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEAE241EFBB55100C0849E /* SubTableViewCell.swift */; };
+		54EEAE271EFBB55100C0849E /* SubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE251EFBB55100C0849E /* SubTableViewCell.xib */; };
+		54EEAE291EFBB65300C0849E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE281EFBB65300C0849E /* 2.png */; };
+		54EEAE2B1EFBB65F00C0849E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE2A1EFBB65F00C0849E /* 3.png */; };
+		54EEAE2D1EFBB67B00C0849E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE2C1EFBB67B00C0849E /* 4.png */; };
+		54EEAE2F1EFBB68500C0849E /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE2E1EFBB68500C0849E /* 5.png */; };
+		54EEAE311EFBB68D00C0849E /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE301EFBB68D00C0849E /* 6.png */; };
+		54EEAE331EFBB6A100C0849E /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE321EFBB6A100C0849E /* 7.png */; };
+		54EEAE371EFBB6C000C0849E /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EEAE361EFBB6C000C0849E /* 8.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,15 @@
 		5467E0171EF1118400027386 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		5467E0191EF114DA00027386 /* SegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		5467E01B1EF1152000027386 /* ProfileCellContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCellContentView.swift; sourceTree = "<group>"; };
+		54EEAE241EFBB55100C0849E /* SubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTableViewCell.swift; sourceTree = "<group>"; };
+		54EEAE251EFBB55100C0849E /* SubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubTableViewCell.xib; sourceTree = "<group>"; };
+		54EEAE281EFBB65300C0849E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		54EEAE2A1EFBB65F00C0849E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		54EEAE2C1EFBB67B00C0849E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		54EEAE2E1EFBB68500C0849E /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		54EEAE301EFBB68D00C0849E /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		54EEAE321EFBB6A100C0849E /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		54EEAE361EFBB6C000C0849E /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				5467E0111EF0E2C900027386 /* 1.jpeg */,
+				54EEAE281EFBB65300C0849E /* 2.png */,
+				54EEAE2A1EFBB65F00C0849E /* 3.png */,
+				54EEAE2C1EFBB67B00C0849E /* 4.png */,
+				54EEAE2E1EFBB68500C0849E /* 5.png */,
+				54EEAE301EFBB68D00C0849E /* 6.png */,
+				54EEAE321EFBB6A100C0849E /* 7.png */,
+				54EEAE361EFBB6C000C0849E /* 8.png */,
 				5467E0161EF1118400027386 /* HMSegmentedControl.h */,
 				5467E0171EF1118400027386 /* HMSegmentedControl.m */,
 				5467DFFD1EF0D79000027386 /* AppDelegate.swift */,
@@ -79,6 +104,8 @@
 				5467E0041EF0D79000027386 /* Assets.xcassets */,
 				5467E0061EF0D79000027386 /* LaunchScreen.storyboard */,
 				5467E0091EF0D79000027386 /* Info.plist */,
+				54EEAE241EFBB55100C0849E /* SubTableViewCell.swift */,
+				54EEAE251EFBB55100C0849E /* SubTableViewCell.xib */,
 			);
 			path = WBProfileDemo;
 			sourceTree = "<group>";
@@ -143,9 +170,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EEAE331EFBB6A100C0849E /* 7.png in Resources */,
+				54EEAE291EFBB65300C0849E /* 2.png in Resources */,
 				5467E0081EF0D79000027386 /* LaunchScreen.storyboard in Resources */,
+				54EEAE371EFBB6C000C0849E /* 8.png in Resources */,
+				54EEAE271EFBB55100C0849E /* SubTableViewCell.xib in Resources */,
 				5467E0051EF0D79000027386 /* Assets.xcassets in Resources */,
+				54EEAE2D1EFBB67B00C0849E /* 4.png in Resources */,
 				5467E0031EF0D79000027386 /* Main.storyboard in Resources */,
+				54EEAE311EFBB68D00C0849E /* 6.png in Resources */,
+				54EEAE2F1EFBB68500C0849E /* 5.png in Resources */,
+				54EEAE2B1EFBB65F00C0849E /* 3.png in Resources */,
 				5467E0121EF0E2C900027386 /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +195,7 @@
 				5467E0101EF0D88800027386 /* WBProfileViewController.swift in Sources */,
 				5467E0181EF1118400027386 /* HMSegmentedControl.m in Sources */,
 				5467DFFE1EF0D79000027386 /* AppDelegate.swift in Sources */,
+				54EEAE261EFBB55100C0849E /* SubTableViewCell.swift in Sources */,
 				5467E01A1EF114DA00027386 /* SegmentView.swift in Sources */,
 				5467E01C1EF1152000027386 /* ProfileCellContentView.swift in Sources */,
 				5467E0141EF0E96F00027386 /* ProfileSubTableViewController.swift in Sources */,

@@ -17,6 +17,8 @@ class ProfileSubTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 200
+        tableView.register(UINib.init(nibName: "SubTableViewCell", bundle: nil), forCellReuseIdentifier: "SubTableViewCell")
     }
     weak var scrollView: UIScrollView?
     
@@ -49,16 +51,13 @@ class ProfileSubTableViewController: UITableViewController {
 extension ProfileSubTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 10
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
-        if let cell = cell {
-            return cell
-        }
-        cell = UITableViewCell(style: .default, reuseIdentifier: "reuseIdentifier")
-        cell?.backgroundColor = view.backgroundColor
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SubTableViewCell") as! SubTableViewCell
+        cell.iconImageView.image = UIImage.init(named: "\(indexPath.row + 2)")
+        cell.subTitleLabel.text = title
+        return cell
     }
 }

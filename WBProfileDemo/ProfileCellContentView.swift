@@ -30,13 +30,14 @@ class ProfileCellContentView: UIView {
         self.backgroundColor = UIColor.white
         self.superController = superViewController
         let colorArr = [UIColor.white, UIColor.black, UIColor.yellow, UIColor.darkGray]
-
+        let titleArr = ["主页", "微博", "视频", "头条"]
         for i in 0...3 {
             let profileSubViewController = ProfileSubTableViewController()
             superViewController.addChildViewController(profileSubViewController)
             
             profileSubViewController.view.frame = CGRect(x: kScreeenWidth * CGFloat(i), y: 0, width: kScreeenWidth, height: self.bounds.size.height)
             profileSubViewController.view.backgroundColor = colorArr[i]
+            profileSubViewController.title = titleArr[i]
             scrollView.addSubview(profileSubViewController.view)
             profileSubViewController.didMove(toParentViewController: superViewController)
         }
